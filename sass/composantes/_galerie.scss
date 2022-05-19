@@ -1,0 +1,9 @@
+//galerie gutenbergerde la page d'acceuille
+
+.galerie{
+    width: 100%;
+    @media screen and (min-width : $largeur__media--tablette) {
+        width: 50%;  
+    }
+    
+}
