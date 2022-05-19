@@ -9,11 +9,7 @@
    <?php if (have_posts()): the_post(); ?>
    <?php the_post_thumbnail(); ?>
           <?php the_title() ?>
-          <?php 
-          $image = get_field('image');
-          if( !empty( $image ) ): ?>
-          <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-          <?php endif; ?>
+         
           
           <h3>L'endroit</h3>
           <p><?php the_field('endroit'); ?></p>
