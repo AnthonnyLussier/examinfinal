@@ -11,6 +11,7 @@
     // $nbHeures = substr($titre, -6);
     $nbHeures = get_field( "nombre_dheures" );
     $departement = get_field( "departement" );
+    $coursdonner = get_field("Jour_de_semaine");
   
     $sigleCours = substr($titre, 0, 3);
    // $descCours = get_the_excerpt();
@@ -29,4 +30,5 @@ $descCours = get_the_content();
     <p class="cours__sigle"><?= $sigleCours; ?> </p>
     <p class="cours__desc">  <?= wp_trim_words($descCours, 15, '<button class="cours__desc__suite"> la suite </button>'); ?></p>
     <p class="cours__dep"><?= $departement; ?></p>
+    <p class="cours__dep"><?=  $coursdonner; ?></p>
 </article>
