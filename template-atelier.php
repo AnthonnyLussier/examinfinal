@@ -20,7 +20,7 @@
 
    <?php if (have_posts()): the_post(); ?>
    <?php the_post_thumbnail(); ?>
-          <?php the_title() ?>
+         <p class="animation2"> <?php the_title() ?></p>
          
           
           <h1>description</h1>
